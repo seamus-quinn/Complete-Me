@@ -2,7 +2,10 @@ class Node {
   constructor(value = null) {
     this.value = value;
     this.children = {};
-    this.completedWord = null;
+    this.lastNode = {
+      completedWord: null,
+      popularity: 0,
+    }
   }
 }
 
